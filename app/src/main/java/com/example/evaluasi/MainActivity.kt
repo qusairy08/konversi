@@ -1,4 +1,4 @@
-package com.sayaeka.myappv2
+package com.example.evaluasi
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import com.example.evaluasi.KonversiRupiah
+import com.example.evaluasi.KonversiSuhu
+import com.example.evaluasi.R
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,17 +27,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when (v?.id) {
             R.id.btn_rupiah -> {
-                val mRupiah = Intent(this@MainActivity,KonversiRupiah::class.java)
+                val mRupiah = Intent(this@MainActivity, KonversiRupiah::class.java)
                 startActivity(mRupiah)
             }
             R.id.btn_suhu -> {
-                val mSuhu = Intent(this@MainActivity,KonversiSuhu::class.java)
+                val mSuhu = Intent(this@MainActivity, KonversiSuhu::class.java)
                 startActivity(mSuhu)
             }
-        }
-
-        fun onClick(p0: View?) {
-            TODO("Not yet implemented")
         }
     }
 }

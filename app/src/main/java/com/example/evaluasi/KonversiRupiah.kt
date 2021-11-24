@@ -36,7 +36,7 @@ class KonversiRupiah : AppCompatActivity(), View.OnClickListener {
 
             if (!isEmptyFields){
                 val hasil = inputRupiah.toDouble()/15000
-                tvResult.text = (hasil.toString() + "$")
+                tvResult.text = "$ %.2f".format(hasil)
             }
         }
     }
