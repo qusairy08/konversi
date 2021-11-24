@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".KonversiSuhu"
+              android:orientation="vertical">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:text="@string/e"
+            android:textSize="25sp"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/f" />
+
+    <EditText
+            android:id="@+id/edt_celcius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:padding="9dp"
+            android:textSize="25sp"/>
+
+    <Button
+            android:id="@+id/btn_calculate"
+            android:text="@string/cek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor=""
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    <TextView
+            android:id="@+id/tv_Farenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:text="@string/fahrenheit" />
+
+    <TextView
+            android:id="@+id/tv_Reamur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:text="@string/reamur" />
+
+    <TextView
+            android:id="@+id/tv_Kelvin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:text="@string/kelvin" />
+
+
+
+</LinearLayout>
